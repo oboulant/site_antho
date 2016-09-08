@@ -1,0 +1,9 @@
+{% extends 'questionnaire/liste_questionnaire_base.html'%}
+
+{% block content %}
+
+{% for questionnaire in questionnaires %}
+    <a href="{% url 'questionnaire_detail' pk=questionnaire.pk %}">{{ questionnaire.filename }}</a>
+{% endfor %}
+
+{% endblock content %}
