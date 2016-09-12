@@ -3,7 +3,7 @@
 {% block content %}
 
 {% for questionnaire in questionnaires %}
-    <a href="{% url 'questionnaire_detail' pk=questionnaire.pk %}">{{ questionnaire.filename }}</a>
+    <a href="{% url 'questionnaire_detail' pk=questionnaire.pk %}">{{ questionnaire.filename }}</a><br>
 {% endfor %}
 
 {% endblock content %}
