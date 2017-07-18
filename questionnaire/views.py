@@ -15,7 +15,7 @@ def questionnaire_list(request):
     return render(request, os.path.join('questionnaire', 'liste_questionnaire.html'), {'questionnaires': questionnaires})
     
 def archive_exane(request):
-    zip_file = open("./Document_partitioning_complexity.zip", 'r')
+    zip_file = open("./Document_partitioning_complexity.zip", 'rb')
     response = HttpResponse(zip_file, content_type='application/force-download')
     response['Content-Disposition'] = 'attachment; filename="%s"' % 'Document_partitioning_complexity.zip'
     return response
