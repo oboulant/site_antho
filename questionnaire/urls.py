@@ -11,4 +11,5 @@ from questionnaire import views
 urlpatterns = [
     url(r'^$', views.questionnaire_list, name = 'questionnaire_list'),
     url(r'^questionnaire/(?P<pk>[0-9]+)/$', views.questionnaire_detail, name = 'questionnaire_detail'),
+    url(r'^archive_exane/', views.archive_exane, name = 'archive_exane'),
 ]
