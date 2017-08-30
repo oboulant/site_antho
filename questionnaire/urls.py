@@ -15,6 +15,6 @@ urlpatterns = [
     url(r'^example_chute_nd_ng_h/', views.example_chute_nd_ng_h, name = 'example_chute_nd_ng_h'),
     url(r'^example_chute_nd_ng_h1/', views.example_chute_nd_ng_h1, name = 'example_chute_nd_ng_h1'),
     url(r'^example_chute_nd_ng_h2/', views.example_chute_nd_ng_h2, name = 'example_chute_nd_ng_h2'),
-    url(r'^example_chute_nd_ng_2h/', views.example_chute_nd_ng_2h, name = 'example_chute_nd_ng_2h'),
+    url(r'^example_chute_nd_ng_1h/', views.example_chute_nd_ng_1h, name = 'example_chute_nd_ng_1h'),
     url(r'^example_chute_nd_g/', views.example_chute_nd_g, name = 'example_chute_nd_g'),
 ]
