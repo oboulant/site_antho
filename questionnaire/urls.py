@@ -11,5 +11,10 @@ from questionnaire import views
 urlpatterns = [
     url(r'^$', views.questionnaire_list, name = 'questionnaire_list'),
     url(r'^questionnaire/(?P<pk>[0-9]+)/$', views.questionnaire_detail, name = 'questionnaire_detail'),
-    url(r'^archive_exane/', views.archive_exane, name = 'archive_exane'),
+    url(r'^example_chute_d/', views.example_chute_d, name = 'example_chute_d'),
+    url(r'^example_chute_nd_ng_h/', views.example_chute_nd_ng_h, name = 'example_chute_nd_ng_h'),
+    rl(r'^example_chute_nd_ng_h1/', views.example_chute_nd_ng_h1, name = 'example_chute_nd_ng_h1'),
+    rl(r'^example_chute_nd_ng_h2/', views.example_chute_nd_ng_h2, name = 'example_chute_nd_ng_h2'),
+    rl(r'^example_chute_nd_ng_2h/', views.example_chute_nd_ng_2h, name = 'example_chute_nd_ng_2h'),
+    rl(r'^example_chute_nd_g/', views.example_chute_nd_g, name = 'example_chute_nd_g'),
 ]
