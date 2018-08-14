@@ -1073,7 +1073,7 @@ var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = 'Correct!';
 var DefaultWrong = 'Not perfect yet. Please try again.';
-var QsToShow = 10;
+var QsToShow = 7;
 var Score = 0;
 var Finished = false;
 var Qs = null;
@@ -1261,57 +1261,57 @@ I[0][0] = 100;
 I[0][1] = '';
 I[0][2] = '0';
 I[0][3] = new Array();
-I[0][3][0] = new Array('Noir. <br />','NON, bien au contraire.',0,0,1);
-I[0][3][1] = new Array('Blanc. ','OUI, TB car ce sont deux couleurs compl\u00e9mentaires\u00a0: l\u2019addition de leur lumi\u00e8re donne du blanc.<br />',1,100,1);
-I[0][3][2] = new Array('Magenta. <br />','NON',0,0,1);
+I[0][3][0] = new Array('Noir.','NON, bien au contraire.',0,0,1);
+I[0][3][1] = new Array('Blanc.','OUI, TB car ce sont deux couleurs compl\u00e9mentaires\u00a0: l\u2019addition de leur lumi\u00e8re donne du blanc.',1,100,1);
+I[0][3][2] = new Array('Magenta.','NON',0,0,1);
 I[1] = new Array();
 I[1][0] = 100;
 I[1][1] = '';
 I[1][2] = '0';
 I[1][3] = new Array();
-I[1][3][0] = new Array('Rouge. <br />','NON, elle n\u2019est pas diam\u00e9tralement oppos\u00e9e au vert.',0,0,1);
-I[1][3][1] = new Array('Magenta. <br />','OUI, TB. Elle est diam\u00e9tralement oppos\u00e9e au vert.',1,100,1);
-I[1][3][2] = new Array('Cyan. <br />','NON, elle n\u2019est pas diam\u00e9tralement oppos\u00e9e au vert.',0,0,1);
+I[1][3][0] = new Array('Rouge.','NON, elle n\u2019est pas diam\u00e9tralement oppos\u00e9e au vert.',0,0,1);
+I[1][3][1] = new Array('Magenta.','OUI, TB. Elle est diam\u00e9tralement oppos\u00e9e au vert.',1,100,1);
+I[1][3][2] = new Array('Cyan.','NON, elle n\u2019est pas diam\u00e9tralement oppos\u00e9e au vert.',0,0,1);
 I[2] = new Array();
 I[2][0] = 100;
 I[2][1] = '';
 I[2][2] = '0';
 I[2][3] = new Array();
-I[2][3][0] = new Array('Bleu. <br />','NON, le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026',0,0,1);
-I[2][3][1] = new Array('Noir. ','OUI, TB. Le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026 Donc si on l\u2019\u00e9claire avec, aucune lumi\u00e8re n\u2019est diffus\u00e9e car le rouge (seule lumi\u00e8re) est absorb\u00e9e.<br />',1,100,1);
-I[2][3][2] = new Array('Blanc. <br />','NON. le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026',0,0,1);
+I[2][3][0] = new Array('Bleu.','NON, le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026',0,0,1);
+I[2][3][1] = new Array('Noir.','OUI, TB. Le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026 Donc si on l\u2019\u00e9claire avec, aucune lumi\u00e8re n\u2019est diffus\u00e9e car le rouge (seule lumi\u00e8re) est absorb\u00e9e.',1,100,1);
+I[2][3][2] = new Array('Blanc.','NON. le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge\u2026',0,0,1);
 I[3] = new Array();
 I[3][0] = 100;
 I[3][1] = '';
 I[3][2] = '0';
 I[3][3] = new Array();
-I[3][3][0] = new Array('Verte. Le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge. Or, la lumi\u00e8re jaune est une addition de lumi\u00e8re rouge et verte. La seule composante de la lumi\u00e8re jaune qui passera le filtre cyan sera donc verte.<br /><br />','Le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge. Or, la lumi\u00e8re jaune est une addition de lumi\u00e8re rouge et verte. La seule composante de la lumi\u00e8re jaune qui passera le filtre cyan sera donc verte.<br /><br />',1,100,1);
-I[3][3][1] = new Array('Magenta. ','NON\u00a0!',0,0,1);
-I[3][3][2] = new Array('Blanche. <br />','NON.',0,0,1);
+I[3][3][0] = new Array('Verte.','Le cyan absorbe la couleur compl\u00e9mentaire, \u00e0 savoir le rouge. Or, la lumi\u00e8re jaune est une addition de lumi\u00e8re rouge et verte. La seule composante de la lumi\u00e8re jaune qui passera le filtre cyan sera donc verte.',1,100,1);
+I[3][3][1] = new Array('Magenta.','NON\u00a0!',0,0,1);
+I[3][3][2] = new Array('Blanche.','NON.',0,0,1);
 I[4] = new Array();
 I[4][0] = 100;
 I[4][1] = '';
 I[4][2] = '0';
 I[4][3] = new Array();
-I[4][3][0] = new Array('Les deux sources de lumi\u00e8re color\u00e9es aient la m\u00eame intensit\u00e9 lumineuse. <br />','NON, ce n\u2019est pas une condition n\u00e9cessaire.',0,0,1);
-I[4][3][1] = new Array('Les deux sources de lumi\u00e8res soient \u00e0 la m\u00eame distance de l\u2019\u0153il. <br />','NON, ce n\u2019est pas une condition n\u00e9cessaire.',0,0,1);
-I[4][3][2] = new Array('Les sources soient suffisamment \u00e9loign\u00e9es de l\u2019\u0153il et/ou suffisamment proches les unes de l\u2019autre pour que l\u2019\u0153il ne puisse pas les distinguer. <br />','OUI, TB, c\u2019est d\u2019ailleurs le principe de l\u2019\u00e9cran LCD.',1,100,1);
+I[4][3][0] = new Array('Les deux sources de lumi\u00e8re color\u00e9es aient la m\u00eame intensit\u00e9 lumineuse.','NON, ce n\u2019est pas une condition n\u00e9cessaire.',0,0,1);
+I[4][3][1] = new Array('Les deux sources de lumi\u00e8res soient \u00e0 la m\u00eame distance de l\u2019\u0153il.','NON, ce n\u2019est pas une condition n\u00e9cessaire.',0,0,1);
+I[4][3][2] = new Array('Les sources soient suffisamment \u00e9loign\u00e9es de l\u2019\u0153il et/ou suffisamment proches les unes de l\u2019autre pour que l\u2019\u0153il ne puisse pas les distinguer.','OUI, TB, c\u2019est d\u2019ailleurs le principe de l\u2019\u00e9cran LCD.',1,100,1);
 I[5] = new Array();
 I[5][0] = 100;
 I[5][1] = '';
 I[5][2] = '0';
 I[5][3] = new Array();
-I[5][3][0] = new Array('Rouge et jaune. <br />','NON\u00a0!',0,0,1);
-I[5][3][1] = new Array('Jaune et magenta. ','OUI, TB. En synth\u00e8se soustractive, le magenta et le jaune donne du rouge.<br />',1,100,1);
-I[5][3][2] = new Array('Magenta et cyan. ','NON\u00a0! Dans ce cas la lumi\u00e8re serait bleue.<br />',0,0,1);
+I[5][3][0] = new Array('Rouge et jaune.','NON\u00a0!',0,0,1);
+I[5][3][1] = new Array('Jaune et magenta.','OUI, TB. En synth\u00e8se soustractive, le magenta et le jaune donne du rouge.',1,100,1);
+I[5][3][2] = new Array('Magenta et cyan.','NON\u00a0! Dans ce cas la lumi\u00e8re serait bleue.',0,0,1);
 I[6] = new Array();
 I[6][0] = 100;
 I[6][1] = '';
 I[6][2] = '0';
 I[6][3] = new Array();
-I[6][3][0] = new Array('Un filtre magenta. ','NON, la lumi\u00e8re serait magenta.<br />',0,0,1);
-I[6][3][1] = new Array('Un filtre cyan et un filtre jaune.  ','OUI, TB. En synth\u00e8se soustractive, le cyan et le jaune donne du vert.<br />',1,100,1);
-I[6][3][2] = new Array('Un filtre vert. <br />','OUI, TB\u00a0!',1,100,1);
+I[6][3][0] = new Array('Un filtre magenta.','NON, la lumi\u00e8re serait magenta.',0,0,1);
+I[6][3][1] = new Array('Un filtre cyan et un filtre jaune.','OUI, TB. En synth\u00e8se soustractive, le cyan et le jaune donne du vert.',1,100,1);
+I[6][3][2] = new Array('Un filtre vert.','OUI, TB\u00a0!',1,100,1);
 
 
 function StartUp(){
@@ -1743,100 +1743,100 @@ function CheckFinished(){
  
 <ol class="QuizQuestions" id="Questions">
 <li class="QuizQuestion" id="Q_0" style="display: none;">
-<div class="QuestionText">Quand on &#x00e9;claire un &#x00e9;cran blanc avec un spot rouge, et avec un sport cyan de m&#x00ea;me intensit&#x00e9; lumineuse, l&#x2019;&#x00e9;cran para&#x00ee;t&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /><br /></div>
+<div class="QuestionText">Quand on &#x00e9;claire un &#x00e9;cran blanc avec un spot rouge, et avec un sport cyan de m&#x00ea;me intensit&#x00e9; lumineuse, l&#x2019;&#x00e9;cran para&#x00ee;t&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Noir. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Noir.
 </li>
 <li id="Q_0_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanc. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanc.
 </li>
 <li id="Q_0_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_1" style="display: none;">
-<div class="QuestionText">La couleur compl&#x00e9;mentaire du vert est le&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /><br /><br /></div>
+<div class="QuestionText">La couleur compl&#x00e9;mentaire du vert est le&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_1_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Rouge. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Rouge.
 </li>
 <li id="Q_1_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_1_Btn"  onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_1_Btn"  onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta.
 </li>
 <li id="Q_1_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_2_Btn"  onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cyan. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_1_2_Btn"  onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cyan.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_2" style="display: none;">
-<div class="QuestionText">On &#x00e9;claire un &#x00e9;cran de couleur cyan avec un spot de lumi&#x00e8;re rouge. L&#x2019;&#x00e9;cran para&#x00ee;t&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /></div>
+<div class="QuestionText">On &#x00e9;claire un &#x00e9;cran de couleur cyan avec un spot de lumi&#x00e8;re rouge. L&#x2019;&#x00e9;cran para&#x00ee;t&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_2_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Bleu. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Bleu.
 </li>
 <li id="Q_2_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_1_Btn"  onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Noir. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_1_Btn"  onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Noir.
 </li>
 <li id="Q_2_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_2_Btn"  onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanc. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_2_Btn"  onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanc.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_3" style="display: none;">
-<div class="QuestionText">On &#x00e9;claire un filtre de couleur cyan par une source de lumi&#x00e8;re jaune. La lumi&#x00e8;re transmise par le filtre est de couleur&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /></div>
+<div class="QuestionText">On &#x00e9;claire un filtre de couleur cyan par une source de lumi&#x00e8;re jaune. La lumi&#x00e8;re transmise par le filtre est de couleur&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_3_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_0_Btn"  onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Verte. Le cyan absorbe la couleur compl&#x00e9;mentaire, &#x00e0; savoir le rouge. Or, la lumi&#x00e8;re jaune est une addition de lumi&#x00e8;re rouge et verte. La seule composante de la lumi&#x00e8;re jaune qui passera le filtre cyan sera donc verte.<br /><br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_0_Btn"  onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Verte.
 </li>
 <li id="Q_3_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_1_Btn"  onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_1_Btn"  onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta.
 </li>
 <li id="Q_3_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_2_Btn"  onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanche. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_2_Btn"  onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Blanche.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_4" style="display: none;">
-<div class="QuestionText">Pour que le cerveau r&#x00e9;alise la synth&#x00e8;se additive de deux lumi&#x00e8;res color&#x00e9;es, il faut que&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /></div>
+<div class="QuestionText">Pour que le cerveau r&#x00e9;alise la synth&#x00e8;se additive de deux lumi&#x00e8;res color&#x00e9;es, il faut que&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_4_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_0_Btn"  onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les deux sources de lumi&#x00e8;re color&#x00e9;es aient la m&#x00ea;me intensit&#x00e9; lumineuse. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_0_Btn"  onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les deux sources de lumi&#x00e8;re color&#x00e9;es aient la m&#x00ea;me intensit&#x00e9; lumineuse.
 </li>
 <li id="Q_4_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_1_Btn"  onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les deux sources de lumi&#x00e8;res soient &#x00e0; la m&#x00ea;me distance de l&#x2019;&#x0153;il. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_1_Btn"  onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les deux sources de lumi&#x00e8;res soient &#x00e0; la m&#x00ea;me distance de l&#x2019;&#x0153;il.
 </li>
 <li id="Q_4_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_2_Btn"  onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les sources soient suffisamment &#x00e9;loign&#x00e9;es de l&#x2019;&#x0153;il et/ou suffisamment proches les unes de l&#x2019;autre pour que l&#x2019;&#x0153;il ne puisse pas les distinguer. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_2_Btn"  onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Les sources soient suffisamment &#x00e9;loign&#x00e9;es de l&#x2019;&#x0153;il et/ou suffisamment proches les unes de l&#x2019;autre pour que l&#x2019;&#x0153;il ne puisse pas les distinguer.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_5" style="display: none;">
-<div class="QuestionText">On superpose deux filtres devant une source de lumi&#x00e8;re blanche. La lumi&#x00e8;re transmise est rouge. Les deux filtres superpos&#x00e9;s sont&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /></div>
+<div class="QuestionText">On superpose deux filtres devant une source de lumi&#x00e8;re blanche. La lumi&#x00e8;re transmise est rouge. Les deux filtres superpos&#x00e9;s sont&#x00a0;:<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_5_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Rouge et jaune. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Rouge et jaune.
 </li>
 <li id="Q_5_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_1_Btn"  onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Jaune et magenta. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_1_Btn"  onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Jaune et magenta.
 </li>
 <li id="Q_5_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_2_Btn"  onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta et cyan. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_2_Btn"  onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Magenta et cyan.
 </li>
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_6" style="display: none;">
-<div class="QuestionText">On peut obtenir de la lumi&#x00e8;re verte en pla&#x00e7;ant devant une source de lumi&#x00e8;re blanche<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /><br /></div>
+<div class="QuestionText">On peut obtenir de la lumi&#x00e8;re verte en pla&#x00e7;ant devant une source de lumi&#x00e8;re blanche<br /><br /><img src="/static/questionnaire/snth add.png" alt="" title="" width="300"  /></div>
 <ol class="MCAnswers">
 <li id="Q_6_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre magenta. 
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre magenta.
 </li>
 <li id="Q_6_1">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_1_Btn"  onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre cyan et un filtre jaune.  
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_1_Btn"  onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre cyan et un filtre jaune.
 </li>
 <li id="Q_6_2">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_2_Btn"  onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre vert. <br />
+<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_2_Btn"  onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un filtre vert.
 </li>
 </ol>
 </li>
